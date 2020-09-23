@@ -2,7 +2,7 @@
 import requests
 
 # Grabbing the JSON from a test API.
-response = requests.get("http://date.jsontest.com")
+response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
 
 # Print the date to confirm if it worked or not.
-print("Today's date is " + response.json()["date"])
+print(response.json())
